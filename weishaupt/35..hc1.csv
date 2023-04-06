@@ -2,8 +2,8 @@
 *b,,,,,"FE","0903",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 *n,,,,,"F1",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 n,,Set,Sollwerte HC1->SC ,"30",,"0507",,Status,,_8_Opdataheat,,, ,Action,,_8_Opdataaction,,, ,SetTemp,,_16_Temp2,,, ,SetPressure,,_16_Pressure,,, ,OutputDegree,,_8_Percent,,, ,DHWSetTemp,,_8_Temp2,,, ,Fueltype,,_8_Fueltype,,,
-b,,BCAST1, ,"30",,,"7600",,,UIN,,,
-b,,BCAST2, ,"30",,,"7800",,,UIN,,,
+b,,BCAST1, ,"30",,,"7600",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+b,,BCAST2, ,"30",,,"7800",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 !include,hc.processvalues.inc,,Prozesswerte Heizkreisregler,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 !include,hc.user.inc,,Parameter Endanwender - Heizkreis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
