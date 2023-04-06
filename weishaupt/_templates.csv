@@ -3,6 +3,11 @@
 _1_ReleaseDHW,BI6,,,Freigabe Warmwasser
 _1_ReleaseHC,BI7,,,Freigabe Heizkreis
 _6_TimeSinceLastCommand,BI0:6,,,Zeit seit letztem Kommando
+
+# Field Templates für Start/Ende-Zeit der Programme,,,,
+_7_TimeStart:Start,TTQ,,,Startzeit 
+_7_TimeEnd:End,TTQ,,,Endezeit 
+
 _8_BurnerOptions,UCH,,,Brenneroptionen
 _8_Counter,UCH,,,
 _8_Fueltype,UCH,0=any;1=oil;2=gas,,
@@ -23,9 +28,7 @@ _8_Temp1,SCH,,°C,Temperatur
 _8_Temp2,D1C,,°C,Temperatur
 _8_Temp3,D2C,,°C,Temperatur
 
-# Field Templates für Start/Ende-Zeit der Programme,,,,
-_8_TimeStart:Start,TTQ,,,Startzeit 
-_8_TimeEnd:End,TTQ,,,Endezeit 
+
 
 _16_Constructiontype,UIN,0x0000=Heavy;0x0001=Light,,
 _16_Counter,UIN,,,
