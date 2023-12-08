@@ -1,17 +1,19 @@
 # type (r;w;u;1-9),class,name,comment,QQ,ZZ,PBSB,ID,field1,part (m;s),type / templates,divider / values,unit,comment,field2,part (m;s),type / templates,divider / values,unit,comment,field3,part (m;s),type / templates,divider / values,unit,comment,field4,part (m;s),type / templates,divider / values,unit,comment,field5,part (m;s),type / templates,divider / values,unit,comment,field6,part (m;s),type / templates,divider / values,unit,comment,field7,part (m;s),type / templates,divider / values,unit,comment
-*b,,,,,"FE","0903",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
 *n,,,,,"F1",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 n,,Set,Sollwerte HC1->SC ,"30",,"0507",,Status,,_8_Opdataheat,,, ,Action,,_8_Opdataaction,,, ,SetTemp,,_16_Temp2,,, ,SetPressure,,_16_Pressure,,, ,OutputDegree,,_8_Percent,,, ,DHWSetTemp,,_8_Temp2,,, ,Fueltype,,_8_Fueltype,,,
-b,,BCAST1, ,"30",,,"7600",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-b,,BCAST2, ,"30",,,"7800",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-!include,hc.processvalues.inc,,Prozesswerte Heizkreisregler,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hc.user.inc,,Parameter Endanwender - Heizkreis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hc.userholiday.inc,,Parameter Endanwender - Urlaub,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hc.expert.inc,,Parameter Heizungsfachmann - Heizkreis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hc.timer.inc,,Zeitprogramme Heizkreis,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hwc.processvalues.inc,,Prozesswerte Heizkreisregler - Warmwasser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hwc.user.inc,,Parameter Endanwender - Warmwasser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hwc.expert.inc,,Parameter Heizungsfachmann - Warmwasser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hwc.timer.inc,,Zeitprogramm Warmwasser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-!include,hwc.timercc.inc,,Zeitprogramm Zirkulationspumpe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#*b,,,,,"FE","0903",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#b,,BCAST1, ,"30",,,"7600",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#b,,BCAST2, ,"30",,,"7800",,,UIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+#*r,,,,,,"0902",,,,,,,
+#*w,,,,,,"0903",,,,,,,
+
+#r,,MinSupplyTemperature,Min-Vorlauftemperatur (351) ,,,,"2B0102",MinSupplyTemperature,,_16_Temp10,,,
+#r,,MaxSupplyTemperature,Max-Vorlauftemperatur (352) ,,,,"280002",MaxSupplyTemperature,,_16_Temp10,,,
+#r,,MixedExternalTemperature,Gemischte Außentemperatur ,,,,"1A0A02",MixedExternalTemperature,,_16_Temp10,,,
+#r,,ExternalTemperature,Außentemperatur ,,,,"0C0002",ExternalTemperature,,_16_Temp10,,,
+#r,,NormalSetTemp,Normal-Soll Temperatur (171) ,,,,"050002",NormalSetTemp,,_16_Temp10,,,
+#r,,ReducedSetTemp,Absenk-Soll Temperatur (172) ,,,,"080002",ReducedSetTemp,,_16_Temp10,,,
+#r,,SummerWinterChangeOverTemperature,Sommer/Winter-Umschalttemperatur (174) ,,,,"160102",SuWiChangeOverTemperature,,_16_Temp10,,,
